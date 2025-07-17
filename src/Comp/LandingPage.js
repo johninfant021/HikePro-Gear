@@ -123,7 +123,7 @@ const LandingPage = () => {
               plan hikes according to your skill level to ensure a safe and
               enjoyable experience.
             </p>
-            <a href="#" className="text-yellow-400 underline">
+            <a href="#id1" className="text-yellow-400 underline">
               read more →
             </a>
           </div>
@@ -155,7 +155,7 @@ const LandingPage = () => {
               really need every piece of hiking gear, but having the essentials
               will make your trip easier and safer.
             </p>
-            <a href="#" className="text-yellow-400 underline">
+            <a href="#id2" className="text-yellow-400 underline">
               read more →
             </a>
           </div>
@@ -177,7 +177,7 @@ const LandingPage = () => {
               Understanding how to read maps and plan your timing can prevent
               getting lost and ensure a successful hike.
             </p>
-            <a href="#" className="text-yellow-400 underline">
+            <a href="#id3" className="text-yellow-400 underline">
               read more →
             </a>
           </div>
