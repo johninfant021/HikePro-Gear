@@ -1,13 +1,12 @@
 import React, { useEffect } from "react";
-import { useState } from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
+
 import { FaInstagram, FaTwitter } from "react-icons/fa";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
+import Nav from "./Nav";
+
 const LandingPage = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleMenu = () => setIsOpen(!isOpen);
   useEffect(() => {
     Aos.init({
       duration: 2000,
@@ -23,49 +22,7 @@ const LandingPage = () => {
           boxShadow: "inset 0px -50px 36px -28px rgba(0, 0, 0, 0.35)",
         }}
       >
-        <header className=" flex justify-between items-center px-5 py-3">
-          <div className="logo">
-            <h1 className="text-2xl font-bold font-times uppercase text-white">
-              mntn
-            </h1>
-          </div>
-
-          <nav className="flex items-center">
-            {/* Desktop Links */}
-            <div className="hidden md:flex gap-5 text-white font-poppins text-md">
-              <a href="#id1" className="hover:text-yellow-400 cursor-pointer">
-                Equipment
-              </a>
-              <a href="#id2" className="hover:text-yellow-400 cursor-pointer">
-                About Us
-              </a>
-              <a href="#id3" className="hover:text-yellow-400 cursor-pointer">
-                Blog
-              </a>
-            </div>
-
-            {/* Hamburger Icon for Mobile */}
-            <button
-              className="text-white md:hidden p-2"
-              onClick={toggleMenu}
-              aria-label="Toggle menu"
-            >
-              <GiHamburgerMenu size={24} />
-            </button>
-          </nav>
-          <div className="hidden md:flex gap-5 text-white font-thin">
-            <h2>Account</h2>
-          </div>
-        </header>
-
-        {/* Mobile Menu */}
-        {isOpen && (
-          <div className="flex flex-col gap-4 p-5 bg-transparent text-white md:hidden">
-            <a href="#id1">Equipment</a>
-            <a href="#id2">About Us</a>
-            <a href="#id3">Blog</a>
-          </div>
-        )}
+        <Nav />
         <section className="md:relative md:h-[90vh] md:flex flex-col items-center justify-center">
           {/* Social Icons Left */}
           <div
