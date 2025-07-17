@@ -240,19 +240,19 @@ const LandingPage = () => {
             </h2>
             <ul className="space-y-2 text-sm text-gray-300">
               <li>
-                <a href="#">About MNTN</a>
+                <a href="#id1">About MNTN</a>
               </li>
               <li>
-                <a href="#">Contributors & Writers</a>
+                <a href="#id1">Contributors & Writers</a>
               </li>
               <li>
-                <a href="#">Write For Us</a>
+                <a href="#id1">Write For Us</a>
               </li>
               <li>
-                <a href="#">Contact Us</a>
+                <a href="#id1">Contact Us</a>
               </li>
               <li>
-                <a href="#">Privacy Policy</a>
+                <a href="#id1">Privacy Policy</a>
               </li>
             </ul>
           </div>
@@ -260,13 +260,13 @@ const LandingPage = () => {
             <h2 className="text-yellow-400 font-semibold mb-4">More on MNTN</h2>
             <ul className="space-y-2 text-sm text-gray-300">
               <li>
-                <a href="#">The Team</a>
+                <a href="#id1">The Team</a>
               </li>
               <li>
-                <a href="#">Jobs</a>
+                <a href="#id1">Jobs</a>
               </li>
               <li>
-                <a href="#">Press</a>
+                <a href="#id1">Press</a>
               </li>
             </ul>
           </div>
