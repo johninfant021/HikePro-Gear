@@ -21,9 +21,9 @@ const Nav = () => {
                   <Link to="/equipment" className="hover:text-yellow-400 cursor-pointer">
                     Equipment
                   </Link>
-                  <a href="#id2" className="hover:text-yellow-400 cursor-pointer">
+                  <Link to="/about" className="hover:text-yellow-400 cursor-pointer">
                     About Us
-                  </a>
+                  </Link>
                   <a href="#id3" className="hover:text-yellow-400 cursor-pointer">
                     Blog
                   </a>
@@ -47,7 +47,7 @@ const Nav = () => {
             {isOpen && (
               <div className="flex flex-col gap-4 p-5 bg-transparent text-white md:hidden">
                 <Link to="/equipment">Equipment</Link>
-                <a href="#id2">About Us</a>
+                <Link to="/about">About Us</Link>
                 <a href="#id3">Blog</a>
               </div>
             )}

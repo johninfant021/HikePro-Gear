@@ -64,7 +64,7 @@ const Equipment = () => {
         id="id1"
         className=" px-6 py-16 md:px-20 flex flex-col items-center justify-center"
       >
-        <h2 className="md:text-4xl text-4xl font-bold mb-6 font-poppins">
+        <h2 className="md:text-4xl text-4xl font-bold mb-6 font-times text-yellow-400">
           Our Equipment
         </h2>
         <p className="text-gray-900 text-lg font-semibold text-center md:px-[20vw] mb-8">
