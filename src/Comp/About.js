@@ -32,7 +32,11 @@ const About = () => {
             className="text-base md:text-lg text-gray-900 px-10 font-poppins leading-relaxed text-justify backdrop-blur-sm rounded shadow-lg"
             data-aos="fade-up"
           >
-            At <span className="text-yellow-300 font-semibold">MNTN</span>, we’re passionate about the outdoors. Our mission is to equip adventurers with high-quality gear that empowers them to conquer any trail, mountain, or journey. Whether you’re a weekend hiker or a seasoned trekker, we’ve got your back — literally.
+            At <span className="text-yellow-300 font-semibold">MNTN</span>,
+            we’re passionate about the outdoors. Our mission is to equip
+            adventurers with high-quality gear that empowers them to conquer any
+            trail, mountain, or journey. Whether you’re a weekend hiker or a
+            seasoned trekker, we’ve got your back — literally.
           </p>
         </div>
 
@@ -46,7 +50,8 @@ const About = () => {
               Our Vision
             </h3>
             <p className="text-gray-300">
-              To become the most trusted and innovative outdoor gear provider globally, helping people explore nature with confidence.
+              To become the most trusted and innovative outdoor gear provider
+              globally, helping people explore nature with confidence.
             </p>
           </div>
 
@@ -58,25 +63,23 @@ const About = () => {
               Our Commitment
             </h3>
             <p className="text-gray-300">
-              Every product we offer is field-tested, eco-friendly, and built to withstand the harshest environments.
+              Every product we offer is field-tested, eco-friendly, and built to
+              withstand the harshest environments.
             </p>
           </div>
         </div>
 
         {/* Call to Action */}
-        <div
-          className="text-center mt-20"
-          data-aos="zoom-in-up"
-        >
+        <div className="text-center mt-20" data-aos="zoom-in-up">
           <h4 className="text-yellow-400 text-2xl md:text-3xl font-semibold mb-4">
             Join the Journey
           </h4>
           <p className="text-gray-300 text-sm md:text-base">
-            Follow us on social media and become part of the MNTN community today!
+            Follow us on social media and become part of the MNTN community
+            today!
           </p>
         </div>
       </section>
-
       <Footer />
     </div>
   );

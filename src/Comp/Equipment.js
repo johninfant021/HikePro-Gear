@@ -89,6 +89,7 @@ const Equipment = () => {
           ))}
         </div>
       </section>
+      
       <Footer/>
     </div>
   );
