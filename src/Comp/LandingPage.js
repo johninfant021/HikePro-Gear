@@ -118,7 +118,10 @@ const LandingPage = () => {
           <div>
             <h2 className="text-9xl text-gray-500 font-bold absolute">01</h2>
             <div className="relative md:py-8 md:px-4 md:m-10 m-16">
-              <p className="text-sm text-yellow-400 uppercase mb-2 font-bold leading-loose tracking-widest" data-aos="fade-in">
+              <p
+                className="text-sm text-yellow-400 uppercase mb-2 font-bold leading-loose tracking-widest"
+                data-aos="fade-in"
+              >
                 Get Started
               </p>
               <h3 className="md:text-5xl text-2xl font-bold mb-4 text-white font-times">
@@ -158,7 +161,10 @@ const LandingPage = () => {
           <div>
             <h2 className="text-9xl text-gray-500 font-bold absolute">02</h2>
             <div className="relative md:py-8 md:px-4 md:m-10 m-16">
-              <p className="text-sm text-yellow-400 uppercase mb-2 font-bold leading-loose tracking-widest" data-aos="fade-in">
+              <p
+                className="text-sm text-yellow-400 uppercase mb-2 font-bold leading-loose tracking-widest"
+                data-aos="fade-in"
+              >
                 Hiking Essentials
               </p>
               <h3 className="md:text-5xl text-2xl font-bold mb-4 text-white font-times">
@@ -169,7 +175,10 @@ const LandingPage = () => {
                 really need every piece of hiking gear, but having the
                 essentials will make your trip easier and safer.
               </p>
-              <a href="#id2" className="text-yellow-400 hover:underline transition-colors duration-300">
+              <a
+                href="#id2"
+                className="text-yellow-400 hover:underline transition-colors duration-300"
+              >
                 read more →
               </a>
             </div>
@@ -182,7 +191,10 @@ const LandingPage = () => {
           <div>
             <h2 className="text-9xl text-gray-500 font-bold absolute">03</h2>
             <div className="relative md:py-8 md:px-4 md:m-10 m-16">
-              <p className="text-sm text-yellow-400 uppercase mb-2 font-bold leading-loose tracking-widest" data-aos="fade-in">
+              <p
+                className="text-sm text-yellow-400 uppercase mb-2 font-bold leading-loose tracking-widest"
+                data-aos="fade-in"
+              >
                 Where you go is the key
               </p>
               <h3 className="md:text-5xl text-2xl font-bold mb-4 text-white font-times">
@@ -193,7 +205,10 @@ const LandingPage = () => {
                 Understanding how to read maps and plan your timing can prevent
                 getting lost and ensure a successful hike.
               </p>
-              <a href="#id3" className="text-yellow-400 hover:underline transition-colors duration-300">
+              <a
+                href="#id3"
+                className="text-yellow-400 hover:underline transition-colors duration-300"
+              >
                 read more →
               </a>
             </div>
@@ -206,6 +221,57 @@ const LandingPage = () => {
           />
         </section>
       </div>
+      <footer className="bg-[#0B1D26] text-white px-8 py-10 md:px-16">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-12">
+          <div className="md:w-1/3">
+            <h1 className="text-2xl font-bold font-times uppercase mb-3">
+              MNTN
+            </h1>
+            <p className="text-sm text-gray-300 mb-6">
+              Get out there & discover your next slope, mountain & destination!
+            </p>
+            <p className="text-xs text-gray-400">
+              Copyright 2023 MNTN, Inc. Terms & Privacy
+            </p>
+          </div>
+          <div>
+            <h2 className="text-yellow-400 font-semibold mb-4">
+              More on The Blog
+            </h2>
+            <ul className="space-y-2 text-sm text-gray-300">
+              <li>
+                <a href="#">About MNTN</a>
+              </li>
+              <li>
+                <a href="#">Contributors & Writers</a>
+              </li>
+              <li>
+                <a href="#">Write For Us</a>
+              </li>
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 className="text-yellow-400 font-semibold mb-4">More on MNTN</h2>
+            <ul className="space-y-2 text-sm text-gray-300">
+              <li>
+                <a href="#">The Team</a>
+              </li>
+              <li>
+                <a href="#">Jobs</a>
+              </li>
+              <li>
+                <a href="#">Press</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
