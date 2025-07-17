@@ -8,10 +8,8 @@ module.exports = {
       fontFamily: {
         poppins: ["'Poppins'", "sans-serif"],
         times: ['"Times New Roman"', "serif"],
-        // Add more if needed
       },
     },
   },
   plugins: [],
 }
-
