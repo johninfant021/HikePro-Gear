@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Nav from "./Nav";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Footer from "./Footer";
 
 const Equipment = () => {
   useEffect(() => {
@@ -88,6 +89,7 @@ const Equipment = () => {
           ))}
         </div>
       </section>
+      <Footer/>
     </div>
   );
 };
