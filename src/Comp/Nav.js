@@ -46,7 +46,7 @@ const Nav = () => {
             {/* Mobile Menu */}
             {isOpen && (
               <div className="flex flex-col gap-4 p-5 bg-transparent text-white md:hidden">
-                <a href="#id1">Equipment</a>
+                <Link to="/equipment">Equipment</Link>
                 <a href="#id2">About Us</a>
                 <a href="#id3">Blog</a>
               </div>
