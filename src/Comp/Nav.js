@@ -8,7 +8,7 @@ const Nav = () => {
       const toggleMenu = () => setIsOpen(!isOpen);
   return (
     <>
-            <header className=" flex justify-between items-center px-5 py-3">
+            <header className=" flex justify-between items-center px-5 py-3 sticky top-0 z-50">
               <div className="logo">
                 <Link to="/" className="text-2xl font-bold font-times uppercase text-white">
                   mntn
