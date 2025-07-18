@@ -39,7 +39,7 @@ const Nav = () => {
                 </button>
               </nav>
               <div className="hidden md:flex gap-5 text-white font-thin">
-                <h2>Account</h2>
+                <Link to="/sign">Account</Link>
               </div>
             </header>
     

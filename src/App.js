@@ -7,6 +7,7 @@ import About from "./Comp/About";
 import Blog from "./Comp/Blog";
 import Contributor from "./Comp/Contributor";
 import Write from "./Comp/Write";
+import SignUp from "./Comp/SignUp";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/equipment" element={<Equipment />}></Route>
           <Route path="/cont" element={<Contributor />}></Route>
           <Route path="/write" element={<Write />}></Route>
+          <Route path="/sign" element={<SignUp />}></Route>
         </Routes>
       </BrowserRouter>
     </>
