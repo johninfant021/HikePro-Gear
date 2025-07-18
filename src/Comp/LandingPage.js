@@ -71,7 +71,7 @@ const LandingPage = () => {
       <div className="bg-[#0B1D26]">
         <section
           id="id1"
-          className="grid md:grid-cols-2 items-center gap-10 px-8 py-20 border-1"
+          className="grid md:grid-cols-2 items-center gap-10 px-6 py-20 border-1"
         >
           <div>
             <h2 className="text-9xl text-gray-500 font-bold absolute">01</h2>
