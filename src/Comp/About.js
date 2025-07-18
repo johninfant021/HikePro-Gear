@@ -11,7 +11,7 @@ const About = () => {
 
   return (
     <div
-      className="bg-cover bg-center"
+      className="bg-cover bg-center overflow-x-hidden"
       style={{
         backgroundImage: `url('https://cdn.pixabay.com/photo/2015/09/04/21/29/yosemite-922757_1280.jpg')`,
         boxShadow: "inset 0px -50px 36px -28px rgba(0, 0, 0, 0.5)",

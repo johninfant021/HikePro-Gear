@@ -4,6 +4,9 @@ import LandingPage from "./Comp/LandingPage";
 import Equipment from "./Comp/Equipment";
 import Nav from "./Comp/Nav";
 import About from "./Comp/About";
+import Blog from "./Comp/Blog";
+import Contributor from "./Comp/Contributor";
+import Write from "./Comp/Write";
 
 function App() {
   return (
@@ -13,7 +16,10 @@ function App() {
           <Route path="/" element={<LandingPage />}></Route>
           <Route path="/nav" element={<Nav />}></Route>
           <Route path="/about" element={<About />}></Route>
+          <Route path="/blog" element={<Blog />}></Route>
           <Route path="/equipment" element={<Equipment />}></Route>
+          <Route path="/cont" element={<Contributor />}></Route>
+          <Route path="/write" element={<Write />}></Route>
         </Routes>
       </BrowserRouter>
     </>

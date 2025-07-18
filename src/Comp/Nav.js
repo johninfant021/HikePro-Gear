@@ -24,9 +24,9 @@ const Nav = () => {
                   <Link to="/about" className="hover:text-yellow-400 cursor-pointer">
                     About Us
                   </Link>
-                  <a href="#id3" className="hover:text-yellow-400 cursor-pointer">
+                  <Link to="/blog" className="hover:text-yellow-400 cursor-pointer">
                     Blog
-                  </a>
+                  </Link>
                 </div>
     
                 {/* Hamburger Icon for Mobile */}
@@ -48,7 +48,7 @@ const Nav = () => {
               <div className="flex flex-col gap-4 p-5 bg-transparent text-white md:hidden">
                 <Link to="/equipment">Equipment</Link>
                 <Link to="/about">About Us</Link>
-                <a href="#id3">Blog</a>
+                <Link to="/blog">Blog</Link>
               </div>
             )}
             </>
