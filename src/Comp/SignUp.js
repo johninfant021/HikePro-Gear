@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Nav from "./Nav";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const SignUp = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 2000,
+      once: false,
+    });
+  }, []);
   return (
     <div
       className="rounded-lg bg-cover bg-center bg-opacity-50"
@@ -11,11 +19,11 @@ const SignUp = () => {
       }}
     >
       <Nav />
-      <h2 className="md:text-4xl text-4xl text-center font-bold font-times text-yellow-400">
-        User Registration
-      </h2>
-      <section className="h-[90vh] flex justify-center items-center font-poppins leading-loose">
+      <section className="h-[90vh] flex justify-center items-center font-poppins leading-loose" data-aos="slide-down">
         <form className="w-[90vw] sm:w-[80vw] md:w-[50vw] backdrop-blur-md bg-white/70 p-6 sm:p-8 md:p-10 rounded-xl shadow-2xl">
+          <h2 className="md:text-4xl text-4xl text-center font-bold font-times text-yellow-400 mb-10 hover:text-yellow-800 leading-loose">
+            User Registration
+          </h2>
           <div className="flex flex-col gap-6">
             <div className="flex flex-col sm:flex-row items-start sm:items-center">
               <label

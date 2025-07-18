@@ -38,7 +38,7 @@ const Nav = () => {
                   <GiHamburgerMenu size={24} />
                 </button>
               </nav>
-              <div className="hidden md:flex gap-5 text-white font-thin">
+              <div className="hidden md:flex gap-5 text-white font-poppins text-lg">
                 <Link to="/sign">Account</Link>
               </div>
             </header>
@@ -46,6 +46,7 @@ const Nav = () => {
             {/* Mobile Menu */}
             {isOpen && (
               <div className="flex flex-col gap-4 p-5 bg-transparent text-white md:hidden">
+                <Link to="/sign">Account</Link>
                 <Link to="/equipment">Equipment</Link>
                 <Link to="/about">About Us</Link>
                 <Link to="/blog">Blog</Link>
