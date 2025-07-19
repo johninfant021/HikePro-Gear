@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from "react";
+import { VscAccount } from "react-icons/vsc";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from 'react-router-dom';
 
@@ -38,7 +39,8 @@ const Nav = () => {
                   <GiHamburgerMenu size={24} />
                 </button>
               </nav>
-              <div className="hidden md:flex gap-5 text-white font-poppins text-lg">
+              <div className="hidden md:flex justify-center items-center gap-2 text-white font-times hover:text-yellow-400 text-lg">
+                <VscAccount/>
                 <Link to="/sign">Account</Link>
               </div>
             </header>
