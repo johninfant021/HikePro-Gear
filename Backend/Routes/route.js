@@ -12,12 +12,12 @@ router.post("/reg", async (req, res) => {
 
     const existingUser = await User.findOne({ email });
     if (existingUser) {
-      return res.status(409).json({ message: "The Email is already exists" });
+      return res.status(409).json({ message: "The Email is already exists and Please click to login now" });
     }
 
     const newUser = new User({ name, email, password: hashPassword });
     await newUser.save();
-    res.status(201).json({ message: "User registered successfully!" });
+    res.status(201).json({ message: "User registered successfully! and Please click to login now" });
   } catch {
     res.status(500).json({ message: "Server error. Please try again later." });
   }
