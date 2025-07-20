@@ -47,7 +47,7 @@ const LogIn = () => {
 
   return (
     <div
-      className="rounded-lg bg-cover bg-center bg-opacity-50 h-[100vh]"
+      className="rounded-lg bg-cover bg-center bg-opacity-50"
       style={{
         backgroundImage: `url('https://cdn.pixabay.com/photo/2015/09/04/21/29/yosemite-922757_1280.jpg')`,
         boxShadow: "inset 0px -50px 36px -28px rgba(0, 0, 0, 0.35)",
@@ -56,7 +56,7 @@ const LogIn = () => {
       <Nav />
 
       <section
-        className="h-[90vh] flex justify-center items-center font-poppins leading-loose"
+        className="h-[95vh] flex justify-center items-center font-poppins leading-loose"
         data-aos="slide-down"
       >
         <form

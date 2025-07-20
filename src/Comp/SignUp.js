@@ -37,7 +37,7 @@ const SignUp = () => {
 
   return (
     <div
-      className="rounded-lg bg-cover bg-center bg-opacity-50 h-[100vh]"
+      className="rounded-lg bg-cover bg-center bg-opacity-50"
       style={{
         backgroundImage: `url('https://cdn.pixabay.com/photo/2015/09/04/21/29/yosemite-922757_1280.jpg')`,
         boxShadow: "inset 0px -50px 36px -28px rgba(0, 0, 0, 0.35)",
@@ -45,12 +45,12 @@ const SignUp = () => {
     >
       <Nav />
       <section
-        className="h-[90vh] flex justify-center items-center font-poppins leading-loose"
+        className="h-[95vh] flex justify-center items-center font-poppins leading-loose"
         data-aos="slide-down"
       >
         <form
           onSubmit={Handlesubmit}
-          className=" w-[90vw] sm:w-[80vw] md:w-[50vw] backdrop-blur-md bg-white/70 p-6 sm:p-8 md:p-10 rounded-xl shadow-2xl"
+          className=" w-[90vw] sm:w-[80vw] md:w-[50vw] backdrop-blur-md bg-white/70 p-4 md:p-6 sm:p-8 md:p-10 rounded-xl shadow-2xl"
         >
           <h2 className="md:text-4xl text-2xl text-center font-bold font-times text-yellow-400 mb-10 hover:text-yellow-800 leading-loose">
             User Registration
