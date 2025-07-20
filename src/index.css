@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* In your index.css or global.css */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 html {

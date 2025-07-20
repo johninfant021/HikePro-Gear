@@ -24,7 +24,7 @@ const Contact = () => {
     alert(data.message);
     setName("");
     setEmail("");
-    setMessage("");
+    setMessage("");   
   };
   return (
     <div
@@ -44,7 +44,7 @@ const Contact = () => {
             Contact Us
           </h2>
 
-          <p className="text-gray-900 text-lg md:text-xl rounded shadow-lg leading-loose text-center backdrop-blur-lg px-16">
+          <p className="text-justify text-gray-900 text-lg md:text-xl rounded shadow-lg leading-loose text-center backdrop-blur-lg px-16">
             Have questions about hiking gear, trips, or partnerships? We'd love
             to hear from you.
           </p>
