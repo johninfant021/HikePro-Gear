@@ -22,7 +22,7 @@ const LogIn = () => {
 
     try {
       const res = await fetch(
-        "https://hikepro-gear.onrender.com/api/auth/login",
+        "https://hikepro-gear-1.onrender.com/api/auth/login",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
