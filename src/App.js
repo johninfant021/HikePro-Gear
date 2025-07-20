@@ -9,6 +9,7 @@ import Contributor from "./Comp/Contributor";
 import Write from "./Comp/Write";
 import SignUp from "./Comp/SignUp";
 import LogIn from "./Comp/LogIn";
+import Contact from "./Comp/ContactUs";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/write" element={<Write />}></Route>
           <Route path="/sign" element={<SignUp />}></Route>
           <Route path="/log" element={<LogIn />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
         </Routes>
       </BrowserRouter>
     </>

@@ -1,4 +1,5 @@
-const User = require("../Models/model");
+// const User = require("../Models/model");
+const { User, Message } = require("../Models/model");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
 const express = require("express");
@@ -30,7 +31,7 @@ router.post("/reg", async (req, res) => {
 router.post("/login", async (req, res) => {
   try {
     const { email, password } = req.body;
-    
+
     const user = await User.findOne({ email });
     if (!user) {
       return res.status(401).json({ message: "User not found" });
@@ -41,11 +42,9 @@ router.post("/login", async (req, res) => {
       return res.status(401).json({ message: "Invalid password" });
     }
 
-    const token = jwt.sign(
-      { id: user._id, email: user.email },
-      "mysecret",
-      { expiresIn: "1h" }
-    );
+    const token = jwt.sign({ id: user._id, email: user.email }, "mysecret", {
+      expiresIn: "1h",
+    });
 
     res.json({ token });
   } catch (err) {
@@ -53,7 +52,16 @@ router.post("/login", async (req, res) => {
     res.status(500).json({ message: "Internal server error" });
   }
 });
-
-
+router.post("/message", async (req, res) => {
+  try {
+    const { name, email, message } = req.body;
+    const mg = new Message({ name, email, message });
+    await mg.save();
+    res.status(201).json({ message: "Message saved successfully" });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: "Server error" });
+  }
+});
 
 module.exports = router;
