@@ -8,6 +8,7 @@ import Blog from "./Comp/Blog";
 import Contributor from "./Comp/Contributor";
 import Write from "./Comp/Write";
 import SignUp from "./Comp/SignUp";
+import LogIn from "./Comp/LogIn";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/cont" element={<Contributor />}></Route>
           <Route path="/write" element={<Write />}></Route>
           <Route path="/sign" element={<SignUp />}></Route>
+          <Route path="/login" element={<LogIn />}></Route>
         </Routes>
       </BrowserRouter>
     </>

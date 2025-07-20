@@ -4,8 +4,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { Link, useNavigate } from "react-router-dom";
 
-const SignUp = () => {
-  const [name, setName] = useState("");
+const LogIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
@@ -18,18 +17,16 @@ const SignUp = () => {
   const Handlesubmit = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("https://hikepro-gear.onrender.com/api/auth/reg", {
+    const res = await fetch("https://hikepro-gear.onrender.com/api/auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ name, email, password }),
+      body: JSON.stringify({ email, password }),
     });
 
     const data = await res.json();
     alert(data.message);
-
-    setName("");
     setEmail("");
     setPassword("");
     navigate("/");
@@ -53,31 +50,14 @@ const SignUp = () => {
           className=" w-[90vw] sm:w-[80vw] md:w-[50vw] backdrop-blur-md bg-white/70 p-6 sm:p-8 md:p-10 rounded-xl shadow-2xl"
         >
           <h2 className="md:text-4xl text-2xl text-center font-bold font-times text-yellow-400 mb-10 hover:text-yellow-800 leading-loose">
-            User Registration
+            User LogIn
           </h2>
           <div className="flex flex-col gap-6">
-            <div className="flex flex-col sm:flex-row items-start sm:items-center">
-              <label
-                htmlFor="name"
-                className="w-full sm:w-1/3 text-sm sm:text-lg md:text-xl mb-2 sm:mb-0"
-              >
-                Enter Your Name
-              </label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                required
-                placeholder="Enter Name Here"
-                className="w-full sm:w-2/3 border rounded py-3 px-4 text-center focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-            </div>
+
 
             <div className="flex flex-col sm:flex-row items-start sm:items-center">
               <label
-                htmlFor="email"
+                htmlFor="mail"
                 className="w-full sm:w-1/3 text-sm sm:text-lg md:text-xl mb-2 sm:mb-0"
               >
                 Enter Your Email
@@ -119,7 +99,7 @@ const SignUp = () => {
                 type="submit"
                 className="rounded bg-gray-700 text-white px-6 py-3 mt-3 hover:bg-gray-800 transition duration-300 shadow-lg"
               >
-                Sign Up
+                Log In
               </button>
             </div>
             <div className="text-center mt-2">
@@ -134,4 +114,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default LogIn;
