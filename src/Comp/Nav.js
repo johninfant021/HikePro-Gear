@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from "react";
-import { VscAccount } from "react-icons/vsc";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { SlLogout } from "react-icons/sl";
+import { SlLogin } from "react-icons/sl";
 import { Link, useNavigate } from "react-router-dom";
 
 const Nav = () => {
@@ -64,9 +64,9 @@ const Nav = () => {
             </div>
           ) : (
             <div className="flex items-center gap-2">
-              <VscAccount />
+              <SlLogin/>
               <Link to="/sign" className="text-white hover:text-yellow-400">
-                Account
+                Log In
               </Link>
             </div>
           )}
