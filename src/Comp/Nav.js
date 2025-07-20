@@ -55,7 +55,7 @@ const Nav = () => {
                 onClick={() => {
                   localStorage.removeItem("token");
                   alert("Logged out successfully!");
-                  navigate("/"); // or window.location.href = "/" if useNavigate isn't available here
+                  navigate("/"); 
                 }}
                 className="text-white hover:text-yellow-400"
               >

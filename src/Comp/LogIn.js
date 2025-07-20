@@ -50,7 +50,7 @@ const LogIn = () => {
           className=" w-[90vw] sm:w-[80vw] md:w-[50vw] backdrop-blur-md bg-white/70 p-6 sm:p-8 md:p-10 rounded-xl shadow-2xl"
         >
           <h2 className="md:text-4xl text-2xl text-center font-bold font-times text-yellow-400 mb-10 hover:text-yellow-800 leading-loose">
-            User LogIn
+            Login Credentials
           </h2>
           <div className="flex flex-col gap-6">
 
@@ -59,8 +59,7 @@ const LogIn = () => {
               <label
                 htmlFor="mail"
                 className="w-full sm:w-1/3 text-sm sm:text-lg md:text-xl mb-2 sm:mb-0"
-              >
-                Enter Your Email
+              >Email
               </label>
               <input
                 type="email"
@@ -79,7 +78,7 @@ const LogIn = () => {
                 htmlFor="password"
                 className="w-full sm:w-1/3 text-sm sm:text-lg md:text-xl mb-2 sm:mb-0"
               >
-                Enter Your Password
+               Password
               </label>
               <input
                 type="password"
@@ -104,7 +103,7 @@ const LogIn = () => {
             </div>
             <div className="text-center mt-2">
               <Link to="/login" className="text-blue-700 hover:underline">
-                Already have an account? Log In
+                Don't have an account? Sign up
               </Link>
             </div>
           </div>
