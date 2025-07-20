@@ -23,7 +23,7 @@ function App() {
           <Route path="/cont" element={<Contributor />}></Route>
           <Route path="/write" element={<Write />}></Route>
           <Route path="/sign" element={<SignUp />}></Route>
-          <Route path="/login" element={<LogIn />}></Route>
+          <Route path="/log" element={<LogIn />}></Route>
         </Routes>
       </BrowserRouter>
     </>

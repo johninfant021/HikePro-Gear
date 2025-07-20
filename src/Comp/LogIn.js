@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Nav from "./Nav";
 import Aos from "aos";
+// import axios from "axios";
 import "aos/dist/aos.css";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -8,28 +9,40 @@ const LogIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
+
   useEffect(() => {
     Aos.init({
       duration: 2000,
       once: false,
     });
   }, []);
-  const Handlesubmit = async (e) => {
+
+  const handleLogin = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("https://hikepro-gear.onrender.com/api/auth/login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ email, password }),
-    });
+    try {
+      const res = await fetch(
+        "https://hikepro-gear.onrender.com/api/auth/login",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email, password }),
+        }
+      );
 
-    const data = await res.json();
-    alert(data.message);
-    setEmail("");
-    setPassword("");
-    navigate("/");
+      const data = await res.json();
+
+      if (data.token) {
+        localStorage.setItem("token", data.token);
+        alert("Login successful");
+        navigate("/");
+      } else {
+        alert(data.message || "Login failed");
+      }
+    } catch (error) {
+      console.error("Login error:", error);
+      alert("Something went wrong. Please try again.");
+    }
   };
 
   return (
@@ -41,29 +54,30 @@ const LogIn = () => {
       }}
     >
       <Nav />
+
       <section
         className="h-[90vh] flex justify-center items-center font-poppins leading-loose"
         data-aos="slide-down"
       >
         <form
-          onSubmit={Handlesubmit}
-          className=" w-[90vw] sm:w-[80vw] md:w-[50vw] backdrop-blur-md bg-white/70 p-6 sm:p-8 md:p-10 rounded-xl shadow-2xl"
+          onSubmit={handleLogin}
+          className="w-[90vw] sm:w-[80vw] md:w-[50vw] backdrop-blur-md bg-white/70 p-6 sm:p-8 md:p-10 rounded-xl shadow-2xl"
         >
           <h2 className="md:text-4xl text-2xl text-center font-bold font-times text-yellow-400 mb-10 hover:text-yellow-800 leading-loose">
             Login Credentials
           </h2>
+
           <div className="flex flex-col gap-6">
-
-
+            {/* Email Input */}
             <div className="flex flex-col sm:flex-row items-start sm:items-center">
               <label
                 htmlFor="mail"
                 className="w-full sm:w-1/3 text-sm sm:text-lg md:text-xl mb-2 sm:mb-0"
-              >Email
+              >
+                Email
               </label>
               <input
                 type="email"
-                name="mail"
                 id="mail"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -73,16 +87,16 @@ const LogIn = () => {
               />
             </div>
 
+            {/* Password Input */}
             <div className="flex flex-col sm:flex-row items-start sm:items-center">
               <label
                 htmlFor="password"
                 className="w-full sm:w-1/3 text-sm sm:text-lg md:text-xl mb-2 sm:mb-0"
               >
-               Password
+                Password
               </label>
               <input
                 type="password"
-                name="password"
                 id="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
@@ -93,6 +107,7 @@ const LogIn = () => {
               />
             </div>
 
+            {/* Submit Button */}
             <div className="text-center">
               <button
                 type="submit"
@@ -101,8 +116,10 @@ const LogIn = () => {
                 Log In
               </button>
             </div>
+
+            {/* Sign Up Link */}
             <div className="text-center mt-2">
-              <Link to="/login" className="text-blue-700 hover:underline">
+              <Link to="/sign" className="text-blue-700 hover:underline">
                 Don't have an account? Sign up
               </Link>
             </div>

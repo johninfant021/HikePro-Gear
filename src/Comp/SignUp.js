@@ -32,7 +32,7 @@ const SignUp = () => {
     setName("");
     setEmail("");
     setPassword("");
-    navigate("/");
+    navigate("/log");
   };
 
   return (
@@ -123,7 +123,7 @@ const SignUp = () => {
               </button>
             </div>
             <div className="text-center mt-2">
-              <Link to="/login" className="text-blue-700 hover:underline">
+              <Link to="/log" className="text-blue-700 hover:underline">
                 Already have an account? Log In
               </Link>
             </div>
