@@ -16,20 +16,19 @@ const LandingPage = () => {
   }, []);
   return (
     <div>
-      <Nav/>
+      <Nav />
       <div
-        className="md:h-[100vh] rounded-lg  h-[60vh] bg-cover bg-center bg-opacity-50"
+        className="md:h-[100vh] rounded-lg py-16 bg-cover bg-center bg-opacity-50 "
         style={{
           backgroundImage: `url('https://cdn.pixabay.com/photo/2015/09/04/21/29/yosemite-922757_1280.jpg')`,
           boxShadow: "inset 0px -50px 36px -28px rgba(0, 0, 0, 0.35)",
         }}
       >
-
         <section className="md:relative md:h-[90vh] md:flex flex-col items-center justify-center">
           {/* Social Icons Left */}
           <div
             data-aos="fade-right"
-            className="md:absolute md:top-1/2 md:left-6 md:-translate-y-1/2 text-white text-xs flex md:flex-col justify-center gap-5 m-5 items-center md:space-y-3"
+            className="md:absolute md:top-1/2 md:left-6 md:-translate-y-1/2 text-white text-xs flex md:flex-col justify-center gap-5 items-center md:space-y-3"
           >
             <span className="md:rotate-90 md:mb-4 md:tracking-wider text-lg font-thin">
               Follow us
@@ -67,8 +66,8 @@ const LandingPage = () => {
             </a>
           </div>
         </section>
-        <div className="absolute bottom-0 left-0 w-full md:h-32 h-5 bg-gradient-to-t from-[#0B1D26] to-transparent z-0" />
       </div>
+
       <div className="bg-[#0B1D26]">
         <section
           id="id1"
@@ -180,7 +179,7 @@ const LandingPage = () => {
           />
         </section>
       </div>
-<Footer/>
+      <Footer />
     </div>
   );
 };

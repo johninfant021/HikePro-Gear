@@ -28,7 +28,7 @@ const Write = () => {
               Write for Us
             </h2>
             <p
-              className="text-base md:text-lg text-gray-900 px-10 font-poppins leading-relaxed text-justify backdrop-blur-sm rounded shadow-lg"
+              className="text-base md:text-lg text-gray-900 px-10 py-5 font-poppins leading-relaxed text-justify backdrop-blur-sm rounded shadow-lg"
               data-aos="zoom-in"
             >
               Do you have a passion for the outdoors, gear reviews, or adventure

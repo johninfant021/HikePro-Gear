@@ -75,7 +75,7 @@ const Nav = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="flex flex-col gap-4 p-5 bg-transparent text-white md:hidden">
+        <div className="flex flex-col gap-4 p-5 text-white md:hidden bg-[#0B1D26]">
           <Link to="/sign">Account</Link>
           <Link to="/equipment">Equipment</Link>
           <Link to="/about">About Us</Link>
