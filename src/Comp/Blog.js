@@ -40,57 +40,59 @@ const Blog = () => {
   }, []);
 
   return (
-    <div
-      className="bg-cover bg-center overflow-x-hidden"
-      style={{
-        backgroundImage: `url('https://cdn.pixabay.com/photo/2015/09/04/21/29/yosemite-922757_1280.jpg')`,
-        boxShadow: "inset 0px -50px 36px -28px rgba(0, 0, 0, 0.5)",
-      }}
-    >
+    <div>
       <Nav />
-      <section className="py-20 px-4 md:px-16">
-        <div className="text-center mb-12">
-          <h2
-            className="text-4xl md:text-5xl font-bold font-times text-yellow-400 mb-6"
-            data-aos="fade-up"
-          >
-            Latest Blog Posts
-          </h2>
-          <p
-            className="text-center md:text-lg text-gray-900 font-poppins leading-relaxed md:mx-10"
-            data-aos="fade-up"
-          >
-            Stay updated with our travel tips, gear guides, and outdoor
-            inspiration from the MNTN team.
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-10">
-          {blogs.map((blog) => (
-            <div
-              key={blog.id}
-              className="bg-[#132936] rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500"
-              data-aos="zoom-in"
+      <div
+        className="bg-cover bg-center overflow-x-hidden"
+        style={{
+          backgroundImage: `url('https://cdn.pixabay.com/photo/2015/09/04/21/29/yosemite-922757_1280.jpg')`,
+          boxShadow: "inset 0px -50px 36px -28px rgba(0, 0, 0, 0.5)",
+        }}
+      >
+        <section className="py-20 px-4 md:px-16">
+          <div className="text-center mb-12">
+            <h2
+              className="text-4xl md:text-5xl font-bold font-times text-yellow-400 mb-6"
+              data-aos="fade-up"
             >
-              <a href={blog.src}>
-                <img
-                  src={blog.image}
-                  alt={blog.title}
-                  className="w-full h-48 object-cover"
-                />
-              </a>
+              Latest Blog Posts
+            </h2>
+            <p
+              className="text-center md:text-lg text-gray-900 font-poppins leading-relaxed md:mx-10"
+              data-aos="fade-up"
+            >
+              Stay updated with our travel tips, gear guides, and outdoor
+              inspiration from the MNTN team.
+            </p>
+          </div>
 
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-yellow-300 mb-2">
-                  {blog.title}
-                </h3>
-                <p className="text-gray-300 text-sm">{blog.description}</p>
+          <div className="grid md:grid-cols-3 gap-10">
+            {blogs.map((blog) => (
+              <div
+                key={blog.id}
+                className="bg-[#132936] rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-transform duration-500"
+                data-aos="zoom-in"
+              >
+                <a href={blog.src}>
+                  <img
+                    src={blog.image}
+                    alt={blog.title}
+                    className="w-full h-48 object-cover"
+                  />
+                </a>
+
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold text-yellow-300 mb-2">
+                    {blog.title}
+                  </h3>
+                  <p className="text-gray-300 text-sm">{blog.description}</p>
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
-      </section>
-      <Footer />
+            ))}
+          </div>
+        </section>
+        <Footer />
+      </div>
     </div>
   );
 };

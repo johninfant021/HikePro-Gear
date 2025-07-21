@@ -11,7 +11,7 @@ const Nav = () => {
   const navigate = useNavigate();
   return (
     <>
-      <header className="backdrop-blur-sm  flex justify-between items-center px-5 py-3 sticky top-0 z-50">
+      <header className="backdrop-blur-sm  flex justify-between items-center px-5 py-3 sticky top-0 z-50 bg-[#0B1D26]">
         <div className="logo">
           <Link
             to="/"

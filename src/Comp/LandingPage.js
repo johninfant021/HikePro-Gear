@@ -16,6 +16,7 @@ const LandingPage = () => {
   }, []);
   return (
     <div>
+      <Nav/>
       <div
         className="md:h-[100vh] rounded-lg  h-[60vh] bg-cover bg-center bg-opacity-50"
         style={{
@@ -23,7 +24,7 @@ const LandingPage = () => {
           boxShadow: "inset 0px -50px 36px -28px rgba(0, 0, 0, 0.35)",
         }}
       >
-        <Nav />
+
         <section className="md:relative md:h-[90vh] md:flex flex-col items-center justify-center">
           {/* Social Icons Left */}
           <div

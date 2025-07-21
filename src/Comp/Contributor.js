@@ -31,47 +31,49 @@ const Contributor = () => {
   }, []);
 
   return (
-    <div
-      className="bg-cover bg-center overflow-x-hidden"
-      style={{
-        backgroundImage: `url('https://cdn.pixabay.com/photo/2015/09/04/21/29/yosemite-922757_1280.jpg')`,
-        boxShadow: "inset 0px -50px 36px -28px rgba(0, 0, 0, 0.5)",
-      }}
-    >
+    <div>
       <Nav />
-      <section className=" text-white py-16 px-6 md:px-20">
-        <h2
-          className="text-center text-yellow-400 text-4xl font-times font-bold mb-12"
-          data-aos="fade-up"
-        >
-          Contributors & Writers
-        </h2>
-        <div className="grid md:grid-cols-3 gap-10 text-center">
-          {contributors.map((contributor, index) => (
-            <div
-              key={index}
-              className="bg-[#132936] p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500"
-              data-aos="zoom-in"
-            >
-              <img
-                src={contributor.img}
-                alt={contributor.name}
-                className="w-40 h-40 object-cover rounded-full mx-auto mb-4 border-4 border-yellow-400"
-              />
-              <h3 className="text-xl font-bold text-yellow-300 mb-1">
-                {contributor.name}
-              </h3>
-              <p className="text-sm text-gray-400 mb-3 italic">
-                {contributor.role}
-              </p>
-              <p className="text-gray-300 text-sm leading-relaxed">
-                {contributor.desc}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
-      <Footer />
+      <div
+        className="bg-cover bg-center overflow-x-hidden"
+        style={{
+          backgroundImage: `url('https://cdn.pixabay.com/photo/2015/09/04/21/29/yosemite-922757_1280.jpg')`,
+          boxShadow: "inset 0px -50px 36px -28px rgba(0, 0, 0, 0.5)",
+        }}
+      >
+        <section className=" text-white py-16 px-6 md:px-20">
+          <h2
+            className="text-center text-yellow-400 text-4xl font-times font-bold mb-12"
+            data-aos="fade-up"
+          >
+            Contributors & Writers
+          </h2>
+          <div className="grid md:grid-cols-3 gap-10 text-center">
+            {contributors.map((contributor, index) => (
+              <div
+                key={index}
+                className="bg-[#132936] p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500"
+                data-aos="zoom-in"
+              >
+                <img
+                  src={contributor.img}
+                  alt={contributor.name}
+                  className="w-40 h-40 object-cover rounded-full mx-auto mb-4 border-4 border-yellow-400"
+                />
+                <h3 className="text-xl font-bold text-yellow-300 mb-1">
+                  {contributor.name}
+                </h3>
+                <p className="text-sm text-gray-400 mb-3 italic">
+                  {contributor.role}
+                </p>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  {contributor.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
+        <Footer />
+      </div>
     </div>
   );
 };
